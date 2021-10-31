@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+
+    <title>Mellofly : Home</title>
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/856350239468552212/867527793872994344/cloud.png">
+</head>
+<body>
+    <link rel="stylesheet" href="StyleSheet1.css">
+    <script type="module" src="Script1.js"></script>
+    <h1 id="toolbar">Mellofly</h1>
+    <label for="selEngine">Engine:</label>
+    <select id="selEngine" onchange="changeEngine()">
+        <option value="nosel.html">Select Engine</option>
+        <option value="https://google.com/search?q=">Google</option>
+        <option value="https://duckduckgo.com/?q=">DuckDuckGo</option>
+        <option value="https://search.brave.com/search?q=">Brave</option>
+        <option value="https://bing.com/search?q=">Bing</option>
+    </select>
+    <ul>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about/about.html">About</a></li>
+        <li><a href="login/account.html">Sign Up</a></li>
+    </ul>
+    <div id="accval">Not Logged In</div>
+    <button id="logout" >Log Out</button>
+    <input id="search" type="text" class="input" placeholder="Whatcha lookin for?">
+    <button id="btn1" type="submit">Search</button>
+    <div id="bottomcopy">Made By Mello#4975 on Discord<br><br><em>© Mello 2021</em></div>
+</body>
+</html>

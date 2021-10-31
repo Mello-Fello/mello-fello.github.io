@@ -1,0 +1,33 @@
+body {
+    background-color: #191919;
+}
+
+#count {
+    color: white;
+    font-size: large;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap');
+
+#val {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+}
+
+#solvebtn {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    text-align: center; 
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+}
