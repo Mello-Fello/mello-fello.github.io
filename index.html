@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logs</title>
+    <style>
+        body {
+            background-color: rgb(22, 22, 22);
+        }
+        h3 {
+            color: green;
+            text-align: left;
+        }
+        .screen {
+            width: 700px;
+            height: 500px;
+            position: absolute;
+            top: 130px;
+            left: 300px;
+        }
+        .parent {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        .monitor {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        #log {
+            background-color: black;
+            position: relative;
+            top: -68px;
+            left: 310px;
+            border: solid;
+            border-color: green;
+            width: 130px;
+        }
+        textarea:focus, input:focus {
+            color: green;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+    </style>
+    <script>
+        const input = document.getElementById('log')
+        function testVal() {
+            const input = document.getElementById('log')
+            console.log(input.value)
+            if (input.value == '006239') {
+                window.location.href = 'log_006239.html'
+            }
+            else if (input.value == '006240') {
+                window.location.href = 'log_006240.html'
+            }
+        }  
+
+    </script>
+</head>
+<body>
+    <div class="parent">
+        <img class="monitor" src="old_monitor.png" width="1600px"/>
+        
+        <h3 class="screen">
+            <pre>
+
+                ██╗     ██╗███╗  ██╗██╗   ██╗
+                ██║░░░░░██║████╗░██║██║░░░██║
+                ██║░░░░░██║██╔██╗██║██║░░░██║
+                ██║░░░░░██║██║╚████║██║░░░██║
+                ███████╗██║██║░╚███║╚██████╔╝
+                ╚══════╝╚═╝╚═╝░░╚══╝░╚═════╝░
+                
+                ██████████████─██████████████
+                ██░░░░░░░░░░██─██░░░░░░░░░░██
+                ██░░██████░░██─██░░██████████
+                ██░░██──██░░██─██░░██────────
+                ██░░██──██░░██─██░░██████████
+                ██░░██──██░░██─██░░░░░░░░░░██
+                ██░░██──██░░██─██████████░░██
+                ██░░██──██░░██─────────██░░██
+                ██░░██████░░██─██████████░░██
+                ██░░░░░░░░░░██─██░░░░░░░░░░██
+                ██████████████─██████████████
+                LINU Systems © 1986
+            
+
+                    <h2 style=" position:relative; left: 137px; font-family: 'Courier New', Courier, monospace;">ENTER LOG NAME HERE:</h2>
+                    <input type="number" id="log" onblur="testVal()">
+
+            </pre>
+        </h3>
+    </div>    
+</body>
+</html>
