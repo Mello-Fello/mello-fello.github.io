@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG #006257</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        h2 {
+            color: green;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        img {
+            filter: blur(500px);
+            border-width: 3px;
+            border: solid;
+            border-color: green;
+            filter: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='a' x='0' y='0' width='1' height='1'%3E%3CfeGaussianBlur stdDeviation='4' result='b'/%3E%3CfeMorphology operator='dilate' radius='4'/%3E %3CfeMerge%3E%3CfeMergeNode/%3E%3CfeMergeNode in='b'/%3E%3C/feMerge%3E%3C/filter%3E%3C/svg%3E#a");
+        }
+    </style>
+    <script>
+        function unblur() {
+            document.getElementById('img').style.filter = 'blur(0px)'
+        }
+    </script>
+</head>
+<body>
+    <h2>LOG #006257 [user01=hellen user02=typeface]</h2>
+    <h2>from hellen:<br>5738 Cherry St. That's you address. I'm going to fucking end you.</h2>    
+    <h2><br>from typeface:<br>You made M-1PR go into maintence and you killed [content deleted],<br> [content deleted], and [content deleted]. You know what happens now.</h2>
+    <h2><br>from typeface:<br></h2>
+    <img id='img' src="woman.png" alt="" width="400px" onclick="unblur()">
+        <h4 style="color: green; font-family:'Courier New', Courier, monospace; position: relative; bottom: 15px;">click to unblur</h4>
+    </img>
+    <h2>from typeface:<br>I'm done playing games Hellen. You're lucky we didn't go after<br> your children.</h2>
+    <h2>--------   END OF LOG  --------<br></h2>
+</body>
+</html>
